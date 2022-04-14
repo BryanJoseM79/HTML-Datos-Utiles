@@ -1,0 +1,167 @@
+
+<!-- define la version de HTML que estamos usando, en este caso seria la HTML5 -->
+<!DOCTYPE html>
+
+<!-- dentro del HTML va toda la pagina WEB, el atributo Lang= seria el lenguaje que usaremos en este caso es español -->
+<html lang="es">
+
+<!-- en el head van los metadatos que no son visibles en la pagina web -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Titulo de la pagina -->
+    <title>Mi primera Web</title>
+</head>
+<!-- El body es el cuerpo de la pagina web, es el contenido de la web siempre el contenido debe ir dentro del body-->
+<body>
+    <!-- siempre debe solo haber un H1 en toda la web-->
+      <h1>Titulo de mi Web</h1> 
+      <!-- los H2 son subtitulos podrian haber mas de 1 en la pagina sin problemas-->
+      <h2>Bienvenidos a mi web</h2>
+
+      <!-- Parrafos -->
+      <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, 
+          exercitationem sint? Ex necessitatibus reprehenderit maiores incidunt voluptatem dolorum
+           fugit neque consequuntur ad ab. Culpa aliquam excepturi voluptatibus dicta, nobis perferendis?
+      </p>
+    
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, 
+        exercitationem sint? Ex necessitatibus reprehenderit maiores incidunt voluptatem dolorum
+         fugit neque consequuntur ad ab. Culpa aliquam excepturi voluptatibus dicta, nobis perferendis?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, 
+        exercitationem sint? Ex necessitatibus reprehenderit maiores incidunt voluptatem dolorum
+         fugit neque consequuntur ad ab. Culpa aliquam excepturi voluptatibus dicta, nobis perferendis?
+    </p>
+    <!-- Saltos de linea [espacios]-->
+                     <br>
+    <!-- salto de linea con linea de division -->
+                    <hr>
+
+    <h3>Tercer encabezado de la pagina</h3>
+
+    <p>
+        <!-- Strong es para letras en negrita -->
+        Lorem ipsum dolor <strong>sit amet consectetur adipisicing elit. Autem, 
+        exercitationem sint? Ex necessitatibus reprehenderit </strong>
+
+        <!-- em es para letra cursiva -->
+       <em>dipisicing elit. Autem,   sit amet consectetur 
+        exercitationem sint?  a Ex necessitatibus reprehenderit </em>
+
+        <!-- span es para poder separar el texto de otro y colocarle una clase con css -->
+       <span id="rojo">maiores incidunt voluptatem dolorum
+        fugit neque consequuntur ad ab. Culpa aliquam excepturi voluptatibus dicta, nobis perferendis?</span>  
+
+        <!-- I es para poner letra cursiva -->
+        <i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, nostrum velit 
+            at sint reiciendis asperiores assumenda deleniti harum mollitia facere voluptate 
+            voluptatem, alias sit. Mollitia reiciendis incidunt sed aliquid odit!</i>
+
+        <!-- blockquote es para citar el texto -->
+        <blockquote>
+            voluptatem, alias sit. Mollitia reiciendis incidunt sed aliquid odit!
+        </blockquote>
+
+        <!-- OL para crear lista ordenada -->
+        <ol>
+            <!-- Li para ir ordenando una a una la lista -->
+            <li>Manzana
+                <ul>
+                    <li>Roja</li>
+                    <li>Verde</li>    
+                </ul>
+            </li>
+
+            <li>Naranja</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ol>
+
+        <!-- UL Para crear una lista desordenada sin numeros y con puntos-->
+        <ul>
+            <li>Naranja</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+
+    </p>
+
+    <hr>
+            <h2>Imagenes en HTML</h2>
+            <!-- Etiqueta ALT lo usamos para poner un texto en caso que la imagen no cargue-->
+            <!-- Etiqueta Title es para dejar un popup de la imagen --> 
+    
+            <img src="imagenes/1572424649_614672_1572453030_noticia_normal.jpg" alt="imagen de un perro" title="foto de perro" width="455px" height="455px">
+
+    <hr>
+
+
+    <hr>
+            <h3>Tablas</h3>
+                <!-- Border es para pintar el borde de la tabla-->
+            <table border="1">
+                <!-- TR fila-->
+                <tr>
+                    <!-- TH es para que resalte el encabezado principal de la tabla -->
+
+                    <th>Apellidos</th> <th>Pais</th> <th>Nombre</th>
+                </tr>
+                <tr>
+                    <!-- TD una columna-->
+                    <td>Grandon</td> <td>Chile</td> <td>Bryan</td>
+                </tr>
+                <tr>
+                    <!-- TD una columna-->
+                    <td>Grandon</td> <td colspan="2">Chile</td> 
+                </tr>
+            </table>
+
+    <hr>
+
+    <hr>
+            <h3>Formulario</h3>
+                <!-- El action es para indicar a donde ira la informacion del formulario-->
+                <!-- El method es para ver que metodo de HTTP usaremos POST / GET-->
+            <form action="" method="post">
+            <p>
+                <!-- label que es lo que llenaremos en el input-->
+                <label for="nombre1">Nombre</label>
+                 <!-- Input es el espacio donde ira la respuesta -->
+                <!-- Pleaceholder es para mostrar que debe escribir dentro de ese campo al escribir se borra -->
+                <input type="text" name="nombre1" placeholder="">
+            </p>
+
+            <p>
+               
+
+                <label for="descripcion">descripcion</label>
+                <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+            </p>
+
+            <input type="radio" name="genero" value="hombre"> Hombre <br>
+            <input type="radio" name="genero" value="mujer"> Mujer <br>
+            <input type="radio" name="genero" value="nada"> nada <br>
+
+            <select name="genero2" id="">
+                <option value="hombre">hombre</option>
+                <option value="mujer">mujer</option>
+                <option value="nada">nada</option>
+            </select>
+                <!-- BOTON para enviar -->
+            <input type="submit" value="enviar formulario">
+
+
+            </form>
+
+
+
+    <hr>
+
+</body>
+</html>
